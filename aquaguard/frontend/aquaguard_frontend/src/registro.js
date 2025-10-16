@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import './Registro.css';
 
 function Registro(){
     const [nombre, setNombre] = useState('');
@@ -63,7 +65,9 @@ function Registro(){
                     <input type="password" value={clave} onChange={e => setClave(e.target.value)} required ></input>
                 </div>
                 <button type="submit">Registrarse</button>
-                <button type="button" onClick={() => navigate("/login")}>Ya tienes una cuenta? Iniciar sesión</button>
+                <Link to="/login" className="link-login">
+                    Ya tienes una cuenta? Iniciar sesión
+                </Link>
             </form>
         </div>
     );

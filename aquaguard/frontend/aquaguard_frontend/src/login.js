@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Login(props){
     const [correo, setCorreo] = useState("");
@@ -49,7 +50,9 @@ function Login(props){
                     <input type="password" value={clave} onChange={e => setClave(e.target.value)} required />
                 </div>
                 <button type="submit">Ingresar</button>
-                <button type="button" onClick={() => navigate("/registro")}>¿No tienes una cuenta? Crea una cuenta</button>
+                <Link to="/registro" className="link-registro">
+                    No tienes una cuenta? Crea una cuenta
+                </Link>
             </form>
         </div>
     );

@@ -1,16 +1,21 @@
 const express = require('express');
 const connectDB = require('./db/db');
-const path = require('path');
 const cors = require('cors');
+
 const app = express();
 
-connectDB;
+// Conectar a la base de datos
+connectDB();
+
+// Middlewares
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 3000;
-app.listen(3000,()=>{
-    console.log('Servidor escuchando en https://localhost:3000');
-});
+// Rutas
+app.use('/api/usuarios', require('./routes/usuarios'));
 
-console.log("Testing");
+// Puerto
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Servidor escuchando en http://localhost:${PORT}`);
+});

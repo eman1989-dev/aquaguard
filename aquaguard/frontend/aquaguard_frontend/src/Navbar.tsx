@@ -13,8 +13,8 @@ import {
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
-  { href: "#", label: "Inicio", active: true },
-  { href: "#", label: "Sobre Nosotros" },
+  { href: "/", label: "Inicio", active: true },
+  { href: "/", label: "Sobre Nosotros" },
   { href: "#", label: "Productos" },
   { href: "#", label: "Contacto" },
 ]

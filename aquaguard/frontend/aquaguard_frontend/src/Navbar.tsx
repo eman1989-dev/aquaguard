@@ -10,6 +10,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+import logo from "./assets/logo.png";
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
@@ -26,6 +27,8 @@ export default function Navbar() {
     {/* Left side */}
     <div className="flex items-center gap-2">
       {/* Mobile menu trigger */}
+      <img src={logo} className="w-10 h-12"></img>
+      <h1 className="font-bold">AquaGuard</h1>
       <Popover>
         <PopoverTrigger asChild>
           <Button
@@ -79,7 +82,7 @@ export default function Navbar() {
         </PopoverContent>
       </Popover>
       {/* Main nav */}
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-6 ml-15">
         {/* Navigation menu */}
         <NavigationMenu className="max-md:hidden">
           <NavigationMenuList className="gap-2">

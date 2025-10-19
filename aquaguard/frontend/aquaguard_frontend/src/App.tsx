@@ -6,6 +6,7 @@ import Sobre_nosotros from './Sobre_nosotros';
 import Footer from './Footer';
 import Productos from './Productos';
 import Contacto from './Contacto';
+import Registro from './Registro';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path='/sobre-nosotros' element={<Sobre_nosotros/>}/>
           <Route path='/productos' element={<Productos/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
+          <Route path='/registro' element={<Registro/>}/>
         </Routes>
       <Footer/>
     </BrowserRouter>

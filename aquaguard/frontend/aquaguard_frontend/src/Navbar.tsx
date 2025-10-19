@@ -17,7 +17,7 @@ const navigationLinks = [
   { href: "/", label: "Inicio", active: true },
   { href: "/sobre-nosotros", label: "Sobre Nosotros" },
   { href: "/productos", label: "Productos" },
-  { href: "#/contacto", label: "Contacto" },
+  { href: "/contacto", label: "Contacto" },
 ]
 
 export default function Navbar() {

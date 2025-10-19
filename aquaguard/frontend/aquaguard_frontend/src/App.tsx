@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Sobre_nosotros from './Sobre_nosotros';
 import Footer from './Footer';
 import Productos from './Productos';
+import Contacto from './Contacto';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/sobre-nosotros' element={<Sobre_nosotros/>}/>
           <Route path='/productos' element={<Productos/>}/>
+          <Route path='/contacto' element={<Contacto/>}/>
         </Routes>
       <Footer/>
     </BrowserRouter>

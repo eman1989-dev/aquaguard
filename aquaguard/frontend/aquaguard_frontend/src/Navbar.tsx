@@ -15,9 +15,9 @@ import logo from "./assets/logo.png";
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
   { href: "/", label: "Inicio", active: true },
-  { href: "/", label: "Sobre Nosotros" },
-  { href: "#", label: "Productos" },
-  { href: "#", label: "Contacto" },
+  { href: "/sobre-nosotros", label: "Sobre Nosotros" },
+  { href: "/productos", label: "Productos" },
+  { href: "#/contacto", label: "Contacto" },
 ]
 
 export default function Navbar() {

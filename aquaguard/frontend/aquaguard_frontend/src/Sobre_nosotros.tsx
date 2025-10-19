@@ -21,7 +21,7 @@ function Sobre_nosotros(){
 
   return (
     <section className="p-10 bg-blue-50 min-h-screen pt-28">
-      <h2 className="text-3xl font-bold text-center text-blue-700 mb-8">Somos AquaGuard</h2>
+      <h2 className="text-5xl font-bold text-center text-blue-700 mb-8">Somos AquaGuard</h2>
       <p className="text-2xl font-bold text-center">Una alternativa sostenible a los filtros de agua convencionales, <br/> proporcionando un diseño optimizado y competitivo con el mercado actual.</p>
       <div className="grid md:grid-cols-3 gap-6 mt-10">
         {features.map((f, i) => (

@@ -7,6 +7,7 @@ import Footer from './Footer';
 import Productos from './Productos';
 import Contacto from './Contacto';
 import Registro from './Registro';
+import Login from './Login';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path='/productos' element={<Productos/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
           <Route path='/registro' element={<Registro/>}/>
+          <Route path='/login' element={<Login/>} />
         </Routes>
       <Footer/>
     </BrowserRouter>

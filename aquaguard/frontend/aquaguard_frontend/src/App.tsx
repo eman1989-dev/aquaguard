@@ -13,6 +13,8 @@ import Sobre_nosotros from './Sobre_nosotros';
 import Productos from './Productos';
 import Contacto from './Contacto';
 import Chatbot from "./Chatbot";
+import Articulos from "./Articulos";
+import InformacionFiltro from "./Info";
 
 // ✅ Componente de protección
 function ProtectedRoute({ children }: { children: React.ReactElement }) {
@@ -105,6 +107,24 @@ function App() {
           element={
             <ProtectedRoute>
               <Chatbot />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/plataforma/articulos"
+          element={
+            <ProtectedRoute>
+              <Articulos />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/plataforma/info"
+          element={
+            <ProtectedRoute>
+              <InformacionFiltro />
             </ProtectedRoute>
           }
         />

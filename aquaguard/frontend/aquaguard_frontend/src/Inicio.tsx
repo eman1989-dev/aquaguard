@@ -9,7 +9,7 @@ function Home() {
     navigate('/registro');
   }
 
-  
+
   return (
     <div className="w-full overflow-x-hidden">
       <Navbar></Navbar>
@@ -21,7 +21,7 @@ function Home() {
         <p className="max-w-xl text-gray-600 mb-6 text-2xl">
           Un filtro de agua doméstico diseñado especialmente para los hogares costarricenses.
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition text-2xl" onChange={click}>
+        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition text-2xl" onClick={click}>
           Comienza ahora
         </button>
       </section>

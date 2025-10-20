@@ -1,7 +1,15 @@
 import Navbar from "./Navbar";
 import vaso from './assets/Glass-of-water.png';
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+
+  const navigate = useNavigate();
+  const click = () =>{
+    navigate('/registro');
+  }
+
+  
   return (
     <div className="w-full overflow-x-hidden">
       <Navbar></Navbar>
@@ -13,7 +21,7 @@ function Home() {
         <p className="max-w-xl text-gray-600 mb-6 text-2xl">
           Un filtro de agua doméstico diseñado especialmente para los hogares costarricenses.
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition text-2xl">
+        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md transition text-2xl" onChange={click}>
           Comienza ahora
         </button>
       </section>

@@ -28,16 +28,20 @@ function Login({ onLoginSuccess }: LoginProps) {
 
       if (resp.ok) {
         const tokenRecibido = resultado.token;
+
+        // Guardar token en localStorage
         localStorage.setItem("token", tokenRecibido);
 
+        // Actualizar userId en App
         if (onLoginSuccess) onLoginSuccess(tokenRecibido);
 
-        navigate("/plataforma");
+        // Redirigir directo al temporizador usando navigate
+        navigate("/plataforma/reloj");
       } else {
         alert("Error de credenciales: " + (resultado.error || "Inténtalo de nuevo"));
       }
     } catch (error) {
-      console.error("Error de conexión " + error);
+      console.error("Error de conexión", error);
       alert("Ocurrió un error al conectar con el servidor");
     }
   };
@@ -81,3 +85,4 @@ function Login({ onLoginSuccess }: LoginProps) {
 }
 
 export default Login;
+

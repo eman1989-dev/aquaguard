@@ -17,7 +17,7 @@ export const SidebarData = [
         link: "/plataforma/reloj"
     },
     {
-        title: "Asistente IA", 
+        title: "Asistente virtual", 
         icon: <AutoAwesomeIcon/>,
         link: "/plataforma/chatbot"
     },

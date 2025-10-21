@@ -1,8 +1,12 @@
 // backend/app.js
-const express = require("express");
-const connectDB = require("./db/db");
-const cors = require("cors");
-require("dotenv").config();
+import express from "express";
+import connectDB from "./db/db.js";
+import cors from "cors";
+import usuariosRoutes from "./routes/usuarios.js";
+import timerRoutes from "./routes/timerRoutes.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 
@@ -19,8 +23,8 @@ app.use(
 app.use(express.json());
 
 // Rutas
-app.use("/api/usuarios", require("./routes/usuarios"));
-app.use("/api/timers", require("./routes/timerRoutes")); 
+app.use("/api/usuarios", usuariosRoutes);
+app.use("/api/timers", timerRoutes);
 
 // Puerto
 const PORT = process.env.PORT || 3000;

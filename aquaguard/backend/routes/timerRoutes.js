@@ -1,5 +1,5 @@
 import express from "express";
-import Timer from "./models/Timer.js";
+import Timer from "../models/timer.js";
 
 const router = express.Router();
 

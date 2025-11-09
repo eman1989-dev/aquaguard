@@ -15,7 +15,7 @@ export default function InformacionFiltro() {
                     <path d="M5 11h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M8 22h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                Reemplazar cada 90 días
+                Reemplazar cada 22 días
                 </span>
             </header>
 
@@ -100,7 +100,7 @@ export default function InformacionFiltro() {
                 </ol>
 
                 <div className="mt-4 p-3 rounded-lg bg-amber-50 border border-amber-100 text-amber-800 text-sm font-medium">
-                    <strong>Recuerda:</strong> La pastilla de carbón activado debe reemplazarse <span className="font-bold">cada 90 días</span> para mantener la eficacia del filtro.
+                    <strong>Recuerda:</strong> La pastilla de carbón activado debe reemplazarse <span className="font-bold">cada 22 días</span> para mantener la eficacia del filtro.
                 </div>
                 </div>
             </article>

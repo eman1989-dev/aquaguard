@@ -58,7 +58,7 @@ function CountdownTimer({ userId }: CountdownTimerProps) {
   const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selected = new Date(e.target.value);
     const end = new Date(selected);
-    end.setDate(selected.getDate() + 45);
+    end.setDate(selected.getDate() + 22);
 
     setStartDate(e.target.value);
     setEndDate(end);
